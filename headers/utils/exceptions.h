@@ -21,13 +21,6 @@ class GDataException : public std::exception
 	std::string m_message;
 };
 
-class ClientLoginException : public GDataException
-{
- public:
-	ClientLoginException(const std::string& message);
-	~ClientLoginException() throw();
-};
-
 } // namespace utils
 } // namespace gdata
 
